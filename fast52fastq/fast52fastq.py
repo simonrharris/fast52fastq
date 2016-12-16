@@ -32,7 +32,7 @@ def main():
 		parser = optparse.OptionParser(usage=usage)
         
 		parser.add_option("-o", "--output", action="store", dest="fastq", help="output fastq file name", type="string", metavar="FILENAME", default="")
-        	parser.add_option("-b", "--baecalls", action="store", dest="basecalls", help="Basecalls to output. Choose from all, @D and 1D [default = %default]", type="choice", choices=["all", "2D", "1D"], metavar="CHOICE", default="all")
+        	parser.add_option("-b", "--baecalls", action="store", dest="basecalls", help="Basecalls to output. Choose from all, 2D and 1D [default = %default]", type="choice", choices=["all", "2D", "1D"], metavar="CHOICE", default="all")
 		parser.add_option("-t", "--trim", action="store", dest="trim", help="Bases to trim from each end of read [default = %default]", metavar="", default=0, type="int")
         	parser.add_option("-T", "--temporary_directory", action="store", dest="temp", help="Temporary directory [default = %default]", type="string", metavar="PATH", default="/tmp")
         	parser.add_option("-v", "--verbose", action="store_true", dest="verbose", help="Verbose output", default=False)
